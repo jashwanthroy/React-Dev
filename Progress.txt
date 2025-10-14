@@ -2,3 +2,9 @@ Progess Doc
 9th October
 ->Displaying Hello world using HTML,javascript and React(using CDN links)
 -> crossorigin in react cdn : resource fetched from browser need to treated with CORS rule
+14 October
+->For creating elements react uses React.development.js
+->For creating root react uses ReactDOM.developement.js
+->React.createElement create a react element and while rendering(React.render) it will convert it into HTML Version for Browser
+-> using [] to create multiple childrens or siblings
+-> jsx -> to make the look and feel of the code simpler and easier
