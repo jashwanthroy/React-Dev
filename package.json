@@ -1,0 +1,23 @@
+{
+  "name": "react-dev",
+  "version": "1.0.0",
+  "description": "React Mastering",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jashwanthroy/React-Dev.git"
+  },
+  "keywords": [],
+  "author": "Jashwanth Roy Karnati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jashwanthroy/React-Dev/issues"
+  },
+  "homepage": "https://github.com/jashwanthroy/React-Dev#readme",
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  }
+}
