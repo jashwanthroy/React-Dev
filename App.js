@@ -16,12 +16,12 @@ const Header = () => (
     </div>
   </div>
 );
-const RestroCard = () => (
+const RestroCard = (props) => (
   <div className="restrocard">
-    <img className= "restrologo" alt="logo" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fp%2FPista-house-Kurnool-61566163440572%2F&psig=AOvVaw0izugAy4MqArwpcZXQfl15&ust=1761235741310000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCPDJlsiYuJADFQAAAAAdAAAAABAE"/>
-    <h3>Pista House</h3>
-    <h4>Biryani, Mandi, Top-Rated</h4>
-    <h4>4.3 stars</h4>
+    <img className= "restrologo" alt="logo" src="normal.jpg"/>
+    <h3>{props.restaurantname}</h3>
+    <h4>{props.cuisine}</h4>
+    <h4>{props.rating}stars</h4>
     <h4>30mins delivery</h4>
   </div>
 );
@@ -30,14 +30,9 @@ const Body = () => (
   <div className="body">
     <div className="search">Search</div>
     <div className="restrocontainer">
-      <RestroCard />
-      <RestroCard />
-      <RestroCard />
-      <RestroCard />
-      <RestroCard />
-      <RestroCard />
-      <RestroCard />
-      <RestroCard />
+      <RestroCard restaurantname="Pista House" cuisine="Biryani, North indian,Mandi,Asian" rating="4.3"/>
+      <RestroCard restaurantname="KFC" cuisine="Burger,wings,sides" rating="3.9"/>
+      <RestroCard restaurantname="CHACHA Food Point" cuisine="chicken kebab,chicken curry" rating="4.5"/>
     </div>
   </div>
 );
