@@ -16,23 +16,24 @@ const Header = () => (
     </div>
   </div>
 );
-const RestroCard = (props) => (
-  <div className="restrocard">
+const RestroCard = (props) => {
+   const {restaurantname,cuisine,rating,deltime } = props;
+  return(<div className="restrocard">
     <img className= "restrologo" alt="logo" src="normal.jpg"/>
-    <h3>{props.restaurantname}</h3>
-    <h4>{props.cuisine}</h4>
-    <h4>{props.rating}stars</h4>
-    <h4>30mins delivery</h4>
-  </div>
-);
+    <h3>{restaurantname}</h3>
+    <h4>{cuisine}</h4>
+    <h4>{rating}stars</h4>
+    <h4>{deltime}mins delivery</h4>
+  </div>)
+};
 
 const Body = () => (
   <div className="body">
     <div className="search">Search</div>
     <div className="restrocontainer">
-      <RestroCard restaurantname="Pista House" cuisine="Biryani, North indian,Mandi,Asian" rating="4.3"/>
-      <RestroCard restaurantname="KFC" cuisine="Burger,wings,sides" rating="3.9"/>
-      <RestroCard restaurantname="CHACHA Food Point" cuisine="chicken kebab,chicken curry" rating="4.5"/>
+      <RestroCard restaurantname="Pista House" cuisine="Biryani, North indian,Mandi,Asian" rating="4.3" deltime="20-25"/>
+      <RestroCard restaurantname="KFC" cuisine="Burger,wings,sides" rating="3.9" deltime="35-40"/>
+      <RestroCard restaurantname="CHACHA Food Point" cuisine="chicken kebab,chicken curry" rating="4.5" deltime="30-35"/>
     </div>
   </div>
 );
